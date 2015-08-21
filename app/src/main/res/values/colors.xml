@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="weakgray">#999999</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="red">#FF0000</color>
+    <color name="all_background_color">#F2F0F0</color>
+    <color name="blue">#0000FF</color>
+    <color name="black">#000000</color>
+    <color name="text_color_black">#333333</color>
+    <color name="title_bar_line">#AAAAAA</color>
+    <color name="title_background">#D22147</color>
+
+
+
+</resources>

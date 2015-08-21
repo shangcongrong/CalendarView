@@ -1,0 +1,207 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.xinyang.calendarview.calendar.widget.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_occupy_layout"/>
+
+            <EditText
+                android:id="@+id/schedule_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="非常棒的旅行"
+                android:background="@color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@color/light_gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/schedule_accurate_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="网商路599号"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/schedule_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/schedule_accurate_location"
+                    android:text="汉庭酒店.."
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_black_big_arrow"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@color/light_gray"/>
+
+            <TextView
+                android:id="@+id/schedule_people_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/schedule_accurate_location"
+                android:text="参与者(选填)"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <com.xinyang.calendarview.calendar.widget.FlowLayout
+                android:id="@+id/schedule_people"
+                xmlns:flowlayout="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                flowlayout:horizontalSpacing="5dp"/>
+
+            <include layout="@layout/gray_occupy_layout"/>
+
+            <com.xinyang.calendarview.calendar.widget.RemindTimeView
+                android:id="@+id/remind_time_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:id="@+id/schedule_repeat_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="重复"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/schedule_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="永不"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/right_black_big_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:id="@+id/schedule_remind_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="提醒"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/schedule_remind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/right_black_big_arrow"/>
+            </LinearLayout>
+
+            <include layout="@layout/gray_occupy_layout"/>
+
+            <EditText
+                android:id="@+id/schedule_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:hint="备注(选填)"
+                android:gravity="top"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asda\n阿斯顿"
+                android:gravity="center"
+                android:background="@color/red"/>
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_add_to_cart"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

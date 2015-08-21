@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <com.xinyang.calendarview.calendar.widget.CircleTextView
+        android:id="@+id/tvtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/has_schedule_dot"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:background="@color/red"
+        android:padding="5dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>
